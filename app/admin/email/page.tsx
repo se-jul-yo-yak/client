@@ -34,14 +34,10 @@ export default function EmailPage() {
       </Sidebar>
 
       {/* 우측 콘텐츠 */}
-      <div className="flex-1 p-6 bg-white">
-        <h2 className="text-lg font-medium mb-2">📄 미리보기</h2>
-        <div className="border rounded-lg overflow-hidden h-[700px]">
-          <iframe
-            id="email-preview"
-            src="/admin/email/preview" // ✅ 직접 `iframe`이 `/admin/email/preview`를 호출
-            className="w-full h-full border-none"
-          />
+      <div className="flex-1 p-6 bg-white flex flex-col">
+        <h2 className="text-lg font-medium mb-2 h-1/12">미리보기</h2>
+        <div className="border rounded-lg overflow-hidden h-11/12">
+          <iframe id="email-preview" src="/admin/email/preview" className="w-full h-full border-none" />
         </div>
       </div>
     </div>
